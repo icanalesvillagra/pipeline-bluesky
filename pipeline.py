@@ -2,11 +2,13 @@ import time
 from transform.limpiar import transformar
 from quality.validar import validar
 from load.cargar import cargar
+from analisis.graficos import graficar
 
 PASOS = [
     ("Transformar", transformar),
     ("Validar", validar),
     ("Cargar", cargar),
+    ("Graficar", graficar),
 ]
 
 def main():
